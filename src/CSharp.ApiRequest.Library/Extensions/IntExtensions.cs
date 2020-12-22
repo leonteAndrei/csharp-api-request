@@ -2,7 +2,7 @@
 
 namespace CSharp.ApiRequest.Library.Extensions
 {
-    public static class IntExtensions
+    public static class TimeSpanExtensions
     {
         public static TimeSpan Milliseconds(this int value)
         {
