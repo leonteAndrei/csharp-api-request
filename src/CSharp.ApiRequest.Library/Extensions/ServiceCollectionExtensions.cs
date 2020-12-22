@@ -4,9 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CSharp.ApiRequest.Library.Extensions
 {
-    public static class ServiceCollectionExtensions
+    public static class ApiRequestLibraryPackage
     {
-        public static IServiceCollection AddCommunicationDependencies(this IServiceCollection services)
+        public static IServiceCollection Register(this IServiceCollection services)
         {
             services.AddHttpClient();
             services.AddScoped<Builders.Interfaces.IHttpClientBuilder, Builders.HttpClientBuilder>();
